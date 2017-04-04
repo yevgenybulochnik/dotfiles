@@ -11,6 +11,8 @@ call vundle#begin() "initialize vundle
 
 	Plugin 'https://github.com/scrooloose/nerdtree.git' "nerdtree plugin
 
+	Plugin 'https://github.com/airblade/vim-gitgutter.git' "git diff support 
+
 call vundle#end()
 
 filetype plugin indent on "turn filetype autodetection back on 
@@ -19,5 +21,6 @@ syntax on "turn syntax hilighting on
 set tabstop=4
 set shiftwidth=4 
 set number
+set updatetime=250 "update time to 250ms so git gutter auto updates faster
 
 autocmd vimenter * NERDTree
