@@ -20,7 +20,11 @@ call vundle#end()
 filetype plugin indent on "turn filetype autodetection back on 
 syntax on "turn syntax highlighting on
 
-set tabstop=4
+"TAB settings 
+set tabstop=4 "number of visual spaces per TAB
+set softtabstop=4 "number of spaces in tab when editing
+set expandtab " tabs are spaces 
+
 set shiftwidth=4 
 set number
 set updatetime=250 "update time to 250ms so git gutter auto updates faster
