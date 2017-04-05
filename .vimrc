@@ -13,10 +13,12 @@ call vundle#begin() "initialize vundle
 
 	Plugin 'https://github.com/airblade/vim-gitgutter.git' "git diff support 
 
+	Plugin 'tpope/vim-fugitive' "add git control to vim
+
 call vundle#end()
 
 filetype plugin indent on "turn filetype autodetection back on 
-syntax on "turn syntax hilighting on
+syntax on "turn syntax highlighting on
 
 set tabstop=4
 set shiftwidth=4 
