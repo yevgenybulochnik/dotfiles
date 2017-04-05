@@ -23,4 +23,7 @@ set shiftwidth=4
 set number
 set updatetime=250 "update time to 250ms so git gutter auto updates faster
 
-autocmd vimenter * NERDTree
+"NerdTree settings
+let NERDTreeShowHidden=1 "force nerdtree to show hidden files
+let NERDTreeIgnore = ['\.swp$'] "hide .swp files
+map <F2> :NERDTreeToggle<CR>
