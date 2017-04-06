@@ -15,6 +15,8 @@ call vundle#begin() "initialize vundle
 
 	Plugin 'tpope/vim-fugitive' "add git control to vim
 
+    Plugin 'http://github.com/jiangmiao/auto-pairs' "auto complete [{()}]
+
 call vundle#end()
 
 filetype plugin indent on "turn filetype autodetection back on 
