@@ -7,13 +7,13 @@ filetype off "filetypes turned off initally for vundle setup
 set rtp+=~/.vim/bundle/Vundle.vim "set vim runtime path to inclue vundle
 call vundle#begin() "initialize vundle
 
-	Plugin 'VundleVim/Vundle.vim' "have vundle manage vundle
+    Plugin 'VundleVim/Vundle.vim' "have vundle manage vundle
 
-	Plugin 'https://github.com/scrooloose/nerdtree.git' "nerdtree plugin
+    Plugin 'https://github.com/scrooloose/nerdtree.git' "nerdtree plugin
 
-	Plugin 'https://github.com/airblade/vim-gitgutter.git' "git diff support 
+    Plugin 'https://github.com/airblade/vim-gitgutter.git' "git diff support 
 
-	Plugin 'tpope/vim-fugitive' "add git control to vim
+    Plugin 'tpope/vim-fugitive' "add git control to vim
 
     Plugin 'http://github.com/jiangmiao/auto-pairs' "auto complete [{()}]
 
