@@ -17,6 +17,8 @@ call vundle#begin() "initialize vundle
 
     Plugin 'http://github.com/jiangmiao/auto-pairs' "auto complete [{()}]
 
+    Plugin 'https://github.com/leafgarland/typescript-vim' "added typescript support
+
 call vundle#end()
 
 filetype plugin indent on "turn filetype autodetection back on 
@@ -33,9 +35,10 @@ map <F2> :NERDTreeToggle<CR>
 "TAB settings 
 set tabstop=4 "number of visual spaces per TAB
 set softtabstop=4 "number of spaces in tab when editing
-set expandtab " tabs are spaces 
+set expandtab "tabs are spaces 
 set shiftwidth=4 
 
 "Misc settings
 set number
 set updatetime=250 "update time to 250ms so git gutter auto updates faster
+set incsearch
