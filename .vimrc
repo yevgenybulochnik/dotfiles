@@ -26,7 +26,7 @@ call vundle#end()
 filetype plugin indent on "turn filetype autodetection back on 
 syntax on "turn syntax highlighting on
 
-"NerdTree settings
+"NerdTree Settings
 let NERDTreeShowHidden=1 "force nerdtree to show hidden files
 let NERDTreeIgnore = ['\.swp$'] "hide .swp files
 autocmd bufenter * if (winnr("$")==1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif "auto close NERDTree if only one tab open
@@ -39,6 +39,11 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+
+"Airline Settings
+let g:airline#extensions#tabline#enabled=1
+let g:airline#extensions#tableline#show_tabs=1
+let g:airline#extensions#tabline#fnamemod=":t"
 
 "TAB settings 
 set tabstop=4 "number of visual spaces per TAB
