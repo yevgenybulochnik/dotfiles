@@ -19,6 +19,8 @@ call vundle#begin() "initialize vundle
 
     Plugin 'https://github.com/leafgarland/typescript-vim' "added typescript support
 
+    Plugin 'vim-airline/vim-airline'
+
 call vundle#end()
 
 filetype plugin indent on "turn filetype autodetection back on 
@@ -31,6 +33,8 @@ autocmd bufenter * if (winnr("$")==1 && exists("b:NERDTree") && b:NERDTree.isTab
 autocmd StdinReadPre * let s:std_in=1 "Open NERDtree if no file specified
 autocmd VimEnter * if argc()==0 && !exists("s:std_in") | NERDTree | endif " ^
 map <F2> :NERDTreeToggle<CR>
+map <F7> :tabp<CR>
+map <F8> :tabn<CR>
 
 "TAB settings 
 set tabstop=4 "number of visual spaces per TAB
