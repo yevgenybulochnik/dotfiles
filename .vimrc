@@ -1,6 +1,6 @@
-set nocompatible 
+set nocompatible
 
-"Setup vundle 
+"Setup vundle
 "For vundle to work, you must first use  git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 filetype off "filetypes turned off initally for vundle setup
 
@@ -11,7 +11,7 @@ call vundle#begin() "initialize vundle
 
     Plugin 'https://github.com/scrooloose/nerdtree.git' "nerdtree plugin
 
-    Plugin 'https://github.com/airblade/vim-gitgutter.git' "git diff support 
+    Plugin 'https://github.com/airblade/vim-gitgutter.git' "git diff support
 
     Plugin 'tpope/vim-fugitive' "add git control to vim
 
@@ -23,7 +23,7 @@ call vundle#begin() "initialize vundle
 
 call vundle#end()
 
-filetype plugin indent on "turn filetype autodetection back on 
+filetype plugin indent on "turn filetype autodetection back on
 syntax on "turn syntax highlighting on
 
 "NerdTree Settings
@@ -42,14 +42,14 @@ nnoremap <C-H> <C-W><C-H>
 
 "Airline Settings
 let g:airline#extensions#tabline#enabled=1
-let g:airline#extensions#tableline#show_tabs=1
 let g:airline#extensions#tabline#fnamemod=":t"
+let g:airline#extensions#tabline#tab_nr_type = 1 " tab number
 
-"TAB settings 
+"TAB settings
 set tabstop=4 "number of visual spaces per TAB
 set softtabstop=4 "number of spaces in tab when editing
-set expandtab "tabs are spaces 
-set shiftwidth=4 
+set expandtab "tabs are spaces
+set shiftwidth=4
 
 "Misc settings
 set number
