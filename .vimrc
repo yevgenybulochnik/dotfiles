@@ -16,7 +16,7 @@ call vundle#begin() "initialize vundle
     Plugin 'http://github.com/jiangmiao/auto-pairs' "auto complete [{()}]
     Plugin 'https://github.com/leafgarland/typescript-vim' "added typescript support
     Plugin 'vim-airline/vim-airline'
-    Plugin 'https://github.com/sjl/badwolf'
+    Plugin 'https://github.com/altercation/vim-colors-solarized'
 
 call vundle#end()
 
@@ -65,4 +65,6 @@ set incsearch
 set wildmenu "visual autocomplete for command menu
 nnoremap <leader>ev :vsp $MYVIMRC<CR>
 nnoremap <leader>es :source $MYVIMRC<CR>
-colorscheme badwolf
+let g:solarized_termcolors=256
+set background=dark
+colorscheme solarized
