@@ -10,18 +10,13 @@ set rtp+=~/.vim/bundle/Vundle.vim "set vim runtime path to inclue vundle
 call vundle#begin() "initialize vundle
 
     Plugin 'VundleVim/Vundle.vim' "have vundle manage vundle
-
     Plugin 'https://github.com/scrooloose/nerdtree.git' "nerdtree plugin
-
     Plugin 'https://github.com/airblade/vim-gitgutter.git' "git diff support
-
     Plugin 'tpope/vim-fugitive' "add git control to vim
-
     Plugin 'http://github.com/jiangmiao/auto-pairs' "auto complete [{()}]
-
     Plugin 'https://github.com/leafgarland/typescript-vim' "added typescript support
-
     Plugin 'vim-airline/vim-airline'
+    Plugin 'https://github.com/sjl/badwolf'
 
 call vundle#end()
 
@@ -70,3 +65,4 @@ set incsearch
 set wildmenu "visual autocomplete for command menu
 nnoremap <leader>ev :vsp $MYVIMRC<CR>
 nnoremap <leader>es :source $MYVIMRC<CR>
+colorscheme badwolf
