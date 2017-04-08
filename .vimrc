@@ -67,3 +67,5 @@ set shiftwidth=4
 set number
 set updatetime=250 "update time to 250ms so git gutter auto updates faster
 set incsearch
+nnoremap <leader>ev :vsp $MYVIMRC<CR>
+nnoremap <leader>es :source $MYVIMRC<CR>
