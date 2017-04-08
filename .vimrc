@@ -1,5 +1,7 @@
 set nocompatible
 
+let mapleader=',' "remapped <leader> from \ line must be above plugins
+
 "Setup vundle
 "For vundle to work, you must first use  git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 filetype off "filetypes turned off initally for vundle setup
@@ -44,7 +46,7 @@ nnoremap <C-H> <C-W><C-H>
 "Airline Settings
 let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#fnamemod=":t"
-let g:airline#extensions#tabline#tab_nr_type = 1 " tab number
+let g:airline#extensions#tabline#tab_nr_type = 1 "shows tab number in tab
 nmap <leader>1 <plug>AirlineSelectTab1
 nmap <leader>2 <plug>AirlineSelectTab2
 nmap <leader>3 <plug>AirlineSelectTab3
