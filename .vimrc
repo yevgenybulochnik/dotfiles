@@ -17,6 +17,7 @@ call vundle#begin() "initialize vundle
     Plugin 'https://github.com/leafgarland/typescript-vim' "added typescript support
     Plugin 'vim-airline/vim-airline'
     Plugin 'https://github.com/altercation/vim-colors-solarized'
+    Plugin 'scrooloose/nerdcommenter'
 
 call vundle#end()
 
@@ -52,6 +53,12 @@ nmap <leader>7 <plug>AirlineSelectTab7
 nmap <leader>8 <plug>AirlineSelectTab8
 nmap <leader>9 <plug>AirlineSelectTab9
 
+"Solarized colorscheme settings 
+set t_Co=256 "force terminal colors to 256
+let g:solarized_termcolors=256
+set background=dark
+colorscheme solarized
+
 "TAB settings
 set tabstop=4 "number of visual spaces per TAB
 set softtabstop=4 "number of spaces in tab when editing
@@ -65,7 +72,3 @@ set incsearch
 set wildmenu "visual autocomplete for command menu
 nnoremap <leader>ev :vsp $MYVIMRC<CR>
 nnoremap <leader>es :source $MYVIMRC<CR>
-set t_Co=256 "force terminal colors to 256
-let g:solarized_termcolors=256
-set background=dark
-colorscheme solarized
