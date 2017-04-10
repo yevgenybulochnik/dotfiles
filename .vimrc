@@ -65,6 +65,7 @@ set incsearch
 set wildmenu "visual autocomplete for command menu
 nnoremap <leader>ev :vsp $MYVIMRC<CR>
 nnoremap <leader>es :source $MYVIMRC<CR>
+set t_Co=256 "force terminal colors to 256
 let g:solarized_termcolors=256
 set background=dark
 colorscheme solarized
