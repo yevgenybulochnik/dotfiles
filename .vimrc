@@ -39,6 +39,10 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
+"NERDCommenter Settings
+nnoremap <leader>c :call NERDComment(0,"toggle")<CR>
+vnoremap <leader>c :call NERDComment(0,"toggle")<CR>
+
 "Airline Settings
 let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#fnamemod=":t"
@@ -53,7 +57,7 @@ nmap <leader>7 <plug>AirlineSelectTab7
 nmap <leader>8 <plug>AirlineSelectTab8
 nmap <leader>9 <plug>AirlineSelectTab9
 
-"Solarized colorscheme settings 
+"Solarized colorscheme settings
 set t_Co=256 "force terminal colors to 256
 let g:solarized_termcolors=256
 set background=dark
