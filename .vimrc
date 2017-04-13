@@ -4,7 +4,7 @@ let mapleader=',' "remapped <leader> from \ line must be above plugins
 
 "Setup vundle
 "For vundle to work, you must first use  git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-filetype off "filetypes turned off initally for vundle setup
+filetype off "filetypes turned off initially for vundle setup
 
 set rtp+=~/.vim/bundle/Vundle.vim "set vim runtime path to inclue vundle
 call vundle#begin() "initialize vundle
@@ -18,6 +18,7 @@ call vundle#begin() "initialize vundle
     Plugin 'vim-airline/vim-airline'
     Plugin 'https://github.com/altercation/vim-colors-solarized'
     Plugin 'scrooloose/nerdcommenter'
+    Plugin 'quramy/vim-js-pretty-template' "adds support of in-string html syntax highlighting
 
 call vundle#end()
 
@@ -62,6 +63,10 @@ set t_Co=256 "force terminal colors to 256
 let g:solarized_termcolors=256
 set background=dark
 colorscheme solarized
+
+"Vim-Js-Pretty-Template Settings
+autocmd FileType typescript JsPreTmpl html
+autocmd FileType typescript syn clear foldBraces "Necessary for leafgarland/typescript-vim
 
 "TAB settings
 set tabstop=4 "number of visual spaces per TAB
