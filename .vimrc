@@ -19,6 +19,7 @@ call vundle#begin() "initialize vundle
     Plugin 'https://github.com/altercation/vim-colors-solarized'
     Plugin 'scrooloose/nerdcommenter'
     Plugin 'quramy/vim-js-pretty-template' "adds support of in-string html syntax highlighting
+    Plugin 'w0rp/ale' "adds async linting support depending on linter installed, !!!!Requires Vim 8.0
 
 call vundle#end()
 
@@ -58,6 +59,9 @@ nmap <leader>7 <plug>AirlineSelectTab7
 nmap <leader>8 <plug>AirlineSelectTab8
 nmap <leader>9 <plug>AirlineSelectTab9
 
+"AlE Settings
+let g:ale_open_list=1 "opens vim window if errors are present
+
 "Solarized colorscheme settings
 set t_Co=256 "force terminal colors to 256
 let g:solarized_termcolors=256
@@ -81,3 +85,4 @@ set incsearch
 set wildmenu "visual autocomplete for command menu
 nnoremap <leader>ev :vsp $MYVIMRC<CR>
 nnoremap <leader>es :source $MYVIMRC<CR>
+highlight EndOfBuffer ctermfg=bg
