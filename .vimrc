@@ -66,7 +66,7 @@ let g:ale_open_list=1 "opens vim window if errors are present
 set t_Co=256 "force terminal colors to 256
 let g:solarized_termcolors=256
 set background=dark
-colorscheme solarized
+silent! colorscheme solarized
 
 "Vim-Js-Pretty-Template Settings
 autocmd FileType typescript JsPreTmpl html
@@ -85,4 +85,4 @@ set incsearch
 set wildmenu "visual autocomplete for command menu
 nnoremap <leader>ev :vsp $MYVIMRC<CR>
 nnoremap <leader>es :source $MYVIMRC<CR>
-highlight EndOfBuffer ctermfg=bg
+silent! highlight EndOfBuffer ctermfg=bg
