@@ -20,6 +20,7 @@ call vundle#begin() "initialize vundle
     Plugin 'scrooloose/nerdcommenter'
     Plugin 'quramy/vim-js-pretty-template' "adds support of in-string html syntax highlighting
     Plugin 'w0rp/ale' "adds async linting support depending on linter installed, !!!!Requires Vim 8.0
+    Plugin 'mattn/emmet-vim' "adds html support
 
 call vundle#end()
 
