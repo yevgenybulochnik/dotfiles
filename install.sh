@@ -12,3 +12,7 @@ for FILE in $DOT_FILES
 do
    ln -snf $DIR/$FILE ~
 done
+
+#Clone vundle and install plugins
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+vim +PluginInstall +qall
