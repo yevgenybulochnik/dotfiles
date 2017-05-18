@@ -21,6 +21,8 @@ call vundle#begin() "initialize vundle
     Plugin 'quramy/vim-js-pretty-template' "adds support of in-string html syntax highlighting
     Plugin 'w0rp/ale' "adds async linting support depending on linter installed, !!!!Requires Vim 8.0
     Plugin 'mattn/emmet-vim' "adds html support
+    Plugin 'ervandew/supertab' "adds omni completion to tabs
+    Plugin 'tpope/vim-surround' "adds support for putting ({' ext around word objects
 
 call vundle#end()
 
