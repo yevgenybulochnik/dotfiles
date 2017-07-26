@@ -63,7 +63,6 @@ nmap <leader>8 <plug>AirlineSelectTab8
 nmap <leader>9 <plug>AirlineSelectTab9
 
 "AlE Settings
-let g:ale_open_list=1 "opens vim window if errors are present
 
 "Solarized colorscheme settings
 set t_Co=256 "force terminal colors to 256
