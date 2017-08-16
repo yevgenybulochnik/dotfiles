@@ -13,7 +13,7 @@ call vundle#begin() "initialize vundle
     Plugin 'https://github.com/scrooloose/nerdtree.git' "nerdtree plugin
     Plugin 'https://github.com/airblade/vim-gitgutter.git' "git diff support
     Plugin 'tpope/vim-fugitive' "add git control to vim
-    Plugin 'http://github.com/jiangmiao/auto-pairs' "auto complete [{()}]
+    Plugin 'https://github.com/jiangmiao/auto-pairs' "auto complete [{()}]
     Plugin 'https://github.com/leafgarland/typescript-vim' "added typescript support
     Plugin 'vim-airline/vim-airline'
     Plugin 'https://github.com/altercation/vim-colors-solarized'
@@ -23,6 +23,7 @@ call vundle#begin() "initialize vundle
     Plugin 'mattn/emmet-vim' "adds html support
     Plugin 'ervandew/supertab' "adds omni completion to tabs
     Plugin 'tpope/vim-surround' "adds support for putting ({' ext around word objects
+    Plugin 'nathanaelkane/vim-indent-guides'
 
 call vundle#end()
 
@@ -74,6 +75,12 @@ silent! colorscheme solarized
 autocmd FileType typescript JsPreTmpl html
 autocmd FileType typescript syn clear foldBraces "Necessary for leafgarland/typescript-vim
 
+"Vim-Indent-guides settings
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_exclude_filetypes = ['nerdtree']
+let g:indent_guides_start_level = 2
+let g:indent_guides_guide_size = 1
+
 "TAB settings
 set tabstop=4 "number of visual spaces per TAB
 set softtabstop=4 "number of spaces in tab when editing
@@ -91,3 +98,4 @@ set wildmenu "visual autocomplete for command menu
 nnoremap <leader>ev :vsp $MYVIMRC<CR>
 nnoremap <leader>es :source $MYVIMRC<CR>
 silent! highlight EndOfBuffer ctermfg=bg
+set breakindent
