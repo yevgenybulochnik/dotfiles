@@ -100,4 +100,4 @@ nnoremap <leader>ev :vsp $MYVIMRC<CR>
 nnoremap <leader>es :source $MYVIMRC<CR>
 silent! highlight EndOfBuffer ctermfg=bg
 set breakindent
-inoremap <leader>, <C-x><C-o> "omnicompletion remap
+inoremap <leader>, <C-x><C-o>
