@@ -89,6 +89,7 @@ set shiftwidth=4
 autocmd FileType typescript setlocal expandtab shiftwidth=2 softtabstop=2 tabstop=2
 autocmd FileType html setlocal expandtab shiftwidth=2 softtabstop=2 tabstop=2
 autocmd FileType css setlocal expandtab shiftwidth=2 softtabstop=2 tabstop=2
+autocmd FileType sass setlocal expandtab shiftwidth=2 softtabstop=2 tabstop=2
 
 "Misc settings
 set number
@@ -99,3 +100,4 @@ nnoremap <leader>ev :vsp $MYVIMRC<CR>
 nnoremap <leader>es :source $MYVIMRC<CR>
 silent! highlight EndOfBuffer ctermfg=bg
 set breakindent
+inoremap <leader>, <C-x><C-o> "omnicompletion remap
