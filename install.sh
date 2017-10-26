@@ -23,4 +23,4 @@ mkdir ~/.antigen
 curl -L git.io/antigen > ~/.antigen/antigen.zsh
 
 #Zsh Install
-sudo apt install zsh
+sudo apt -y install zsh

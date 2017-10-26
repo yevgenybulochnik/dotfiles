@@ -12,7 +12,7 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-source /home/yevgeny/.antigen/.antigen.zsh
+source ~/.antigen/antigen.zsh
 
 antigen use oh-my-zsh
 antigen theme fishy
