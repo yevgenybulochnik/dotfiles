@@ -6,6 +6,7 @@ DOT_FILES='
 .gitconfig
 .vimrc
 .tmux.conf
+.zshrc
 '
 
 for FILE in $DOT_FILES
@@ -16,3 +17,10 @@ done
 #Clone vundle and install plugins
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
+
+#Antigen install
+mkdir ~/.antigen
+curl -L git.io/antigen > ~/.antigen/antigen.zsh
+
+#Zsh Install
+sudo apt install zsh
