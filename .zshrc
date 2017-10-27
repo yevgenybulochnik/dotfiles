@@ -24,5 +24,6 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle z
 antigen bundle pip
+antigen bundle tmux
 
 antigen apply
