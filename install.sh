@@ -24,3 +24,4 @@ curl -L git.io/antigen > ~/.antigen/antigen.zsh
 
 #Zsh Install
 sudo apt -y install zsh
+sudo chsh yevgeny -s /bin/zsh
