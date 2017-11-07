@@ -53,6 +53,7 @@ vnoremap <leader>c :call NERDComment(0,"toggle")<CR>
 let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#fnamemod=":t"
 let g:airline#extensions#tabline#tab_nr_type = 1 "shows tab number in tab
+let g:airline_powerline_fonts = 1
 nmap <leader>1 <plug>AirlineSelectTab1
 nmap <leader>2 <plug>AirlineSelectTab2
 nmap <leader>3 <plug>AirlineSelectTab3
