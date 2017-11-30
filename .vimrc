@@ -23,7 +23,8 @@ call vundle#begin() "initialize vundle
     Plugin 'mattn/emmet-vim' "adds html support
     Plugin 'ervandew/supertab' "adds omni completion to tabs
     Plugin 'tpope/vim-surround' "adds support for putting ({' ext around word objects
-    Plugin 'nathanaelkane/vim-indent-guides'
+    Plugin 'nathanaelkane/vim-indent-guides' "adds indent guidelines
+    Plugin 'christoomey/vim-tmux-navigator' "consistent nav bindings
 
 call vundle#end()
 
