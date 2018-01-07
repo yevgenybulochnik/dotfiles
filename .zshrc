@@ -30,3 +30,8 @@ antigen bundle debian
 antigen bundle chrissicool/zsh-256color
 
 antigen apply
+
+if [ -d ~/node_modules ]
+then
+    path+=~/node_modules/.bin
+fi
