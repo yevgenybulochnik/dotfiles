@@ -25,6 +25,7 @@ call vundle#begin() "initialize vundle
     Plugin 'tpope/vim-surround' "adds support for putting ({' ext around word objects
     Plugin 'nathanaelkane/vim-indent-guides' "adds indent guidelines
     Plugin 'christoomey/vim-tmux-navigator' "consistent nav bindings
+    Plugin 'Vimjas/vim-python-pep8-indent'
 
 call vundle#end()
 
