@@ -97,10 +97,14 @@ autocmd FileType sass setlocal expandtab shiftwidth=2 softtabstop=2 tabstop=2
 "Misc settings
 set number
 set updatetime=250 "update time to 250ms so git gutter auto updates faster
-set incsearch
 set wildmenu "visual autocomplete for command menu
 nnoremap <leader>ev :vsp $MYVIMRC<CR>
 nnoremap <leader>es :source $MYVIMRC<CR>
 silent! highlight EndOfBuffer ctermfg=bg
 set breakindent
 inoremap <leader>, <C-x><C-o>
+
+"Search & highlight settings
+set incsearch
+set hlsearch
+nnoremap <leader><space> :nohlsearch<CR>
