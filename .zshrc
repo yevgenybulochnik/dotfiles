@@ -28,6 +28,7 @@ antigen bundle pip
 antigen bundle tmux
 antigen bundle debian
 antigen bundle chrissicool/zsh-256color
+antigen bundle endaaman/lxd-completion-zsh
 
 antigen apply
 
