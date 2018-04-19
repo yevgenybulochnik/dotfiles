@@ -90,6 +90,8 @@ set softtabstop=4 "number of spaces in tab when editing
 set expandtab "tabs are spaces
 set shiftwidth=4
 autocmd FileType typescript setlocal expandtab shiftwidth=2 softtabstop=2 tabstop=2
+autocmd FileType javascript setlocal expandtab shiftwidth=2 softtabstop=2 tabstop=2
+autocmd FileType yaml setlocal expandtab shiftwidth=2 softtabstop=2 tabstop=2
 autocmd FileType html setlocal expandtab shiftwidth=2 softtabstop=2 tabstop=2
 autocmd FileType css setlocal expandtab shiftwidth=2 softtabstop=2 tabstop=2
 autocmd FileType sass setlocal expandtab shiftwidth=2 softtabstop=2 tabstop=2
