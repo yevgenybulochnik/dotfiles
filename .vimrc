@@ -34,7 +34,7 @@ syntax on "turn syntax highlighting on
 
 "NerdTree Settings
 let NERDTreeShowHidden=1 "force nerdtree to show hidden files
-let NERDTreeIgnore = ['\.swp$'] "hide .swp files
+let NERDTreeIgnore = ['\.swp$', '__pycache__', '\.pyc$'] "hide .swp files
 let NERDTreeMinimalUI=1 "hide Press ? for help
 autocmd bufenter * if (winnr("$")==1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif "auto close NERDTree if only one tab open
 autocmd StdinReadPre * let s:std_in=1 "Open NERDtree if no file specified
