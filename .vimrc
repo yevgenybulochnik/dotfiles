@@ -26,6 +26,9 @@ call vundle#begin() "initialize vundle
     Plugin 'nathanaelkane/vim-indent-guides' "adds indent guidelines
     Plugin 'christoomey/vim-tmux-navigator' "consistent nav bindings
     Plugin 'Vimjas/vim-python-pep8-indent'
+    Plugin 'valloric/youcompleteme' "Autocomplete engine 
+    Plugin 'SirVer/ultisnips' "Snippet engine
+    Plugin 'honza/vim-snippets' "Premade snippets
 
 call vundle#end()
 
@@ -84,6 +87,9 @@ let g:indent_guides_exclude_filetypes = ['nerdtree']
 let g:indent_guides_start_level = 2
 let g:indent_guides_guide_size = 1
 
+"Ultisnips settings
+let g:UltiSnipsExpandTrigger="<leader><tab>"
+
 "TAB settings
 set tabstop=4 "number of visual spaces per TAB
 set softtabstop=4 "number of spaces in tab when editing
@@ -93,6 +99,7 @@ autocmd FileType typescript setlocal expandtab shiftwidth=2 softtabstop=2 tabsto
 autocmd FileType javascript setlocal expandtab shiftwidth=2 softtabstop=2 tabstop=2
 autocmd FileType yaml setlocal expandtab shiftwidth=2 softtabstop=2 tabstop=2
 autocmd FileType html setlocal expandtab shiftwidth=2 softtabstop=2 tabstop=2
+autocmd FileType htmldjango setlocal expandtab shiftwidth=2 softtabstop=2 tabstop=2
 autocmd FileType css setlocal expandtab shiftwidth=2 softtabstop=2 tabstop=2
 autocmd FileType sass setlocal expandtab shiftwidth=2 softtabstop=2 tabstop=2
 
