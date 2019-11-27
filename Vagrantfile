@@ -17,8 +17,7 @@ Vagrant.configure('2') do |config|
     add-apt-repository ppa:neovim-ppa/unstable
     apt update
     apt install nodejs npm python3-pip neovim -y
+    su - vagrant -c ./dotfiles/install-ubuntu.sh
   SHELL
 
 end
-
-# vi: set ft=ruby:
