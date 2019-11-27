@@ -1,0 +1,10 @@
+" General Settings
+let NERDTreeShowHidden = 1 "force nerdtree to show hidden files
+let NERDTreeMinimalUI = 1 "hide Press ? for help
+
+" Key Bindings
+map <F2> :NERDTreeToggle<CR>
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
