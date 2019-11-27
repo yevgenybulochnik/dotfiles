@@ -1,6 +1,7 @@
 " General settings
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#tab_nr_type = 1
+let g:airline_theme='badwolf'
 
 " Key bindings
 nmap <leader>1 <plug>AirlineSelectTab1
