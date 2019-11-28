@@ -28,6 +28,10 @@ do
     ln -snf $DIR/config/nvim/$LINK ~/.config/nvim/
 done
 
+#Antigen install
+mkdir ~/.antigen
+curl -L git.io/antigen > ~/.antigen/antigen.zsh
+
 #Setup vim-plug and install plugins
 curl -sfLo ~/.config/nvim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
