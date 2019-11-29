@@ -16,6 +16,7 @@ done
 
 NEOVIM_LINKS='
 ftplugin
+coc-settings.json
 settings
 init.vim
 plugins.vim
