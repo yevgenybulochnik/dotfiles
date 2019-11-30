@@ -5,6 +5,7 @@ Plug 'jiangmiao/auto-pairs' " auto complete [{()}]
 Plug 'neoclide/coc.nvim', {'branch': 'release'} " Intelisense Engine
 Plug 'scrooloose/nerdcommenter' " better commenting
 Plug 'ntpeters/vim-better-whitespace' " Show Whitespace
+Plug 'tpope/vim-surround'
 
 " === UI === "
 Plug 'morhetz/gruvbox' " Colorscheme
