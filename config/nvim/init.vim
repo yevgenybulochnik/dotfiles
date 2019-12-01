@@ -10,6 +10,7 @@ let mapleader=',' " remapped <leader> from \
 set number
 set updatetime=250 " update time to 250ms so git gutter auto updates faster
 set breakindent
+nnoremap <leader>es :source $MYVIMRC<CR>
 
 " Global tab settings
 set tabstop=4 " number of visual spaces per TAB
