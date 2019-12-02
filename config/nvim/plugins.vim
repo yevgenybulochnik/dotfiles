@@ -14,6 +14,7 @@ Plug 'vim-airline/vim-airline' " Vim status line
 Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter' " git diff support
 Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' } " adjustable floating window
+Plug 'simnalamburt/vim-mundo' " Visual undo tree
 
 " === Syntax === "
 Plug 'HerringtonDarkholme/yats.vim'
