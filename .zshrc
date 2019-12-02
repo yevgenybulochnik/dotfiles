@@ -16,7 +16,13 @@ source ~/.antigen/antigen.zsh
 
 antigen use oh-my-zsh
 antigen theme fishy
-#antigen theme https://github.com/denysdovhan/spaceship-zsh-theme spaceship
+
+# Spaceship prompt settings
+# antigen theme https://github.com/denysdovhan/spaceship-zsh-theme spaceship
+# SPACESHIP_USER_COLOR=214
+# SPACESHIP_DIR_COLOR=72
+# SPACESHIP_HOST_COLOR_SSH=142
+# SPACESHIP_GIT_BRANCH_COLOR=175
 
 # Antigen Bundles
 antigen bundle git
@@ -31,3 +37,14 @@ antigen bundle chrissicool/zsh-256color
 antigen bundle endaaman/lxd-completion-zsh
 
 antigen apply
+
+# Alias
+alias vim="nvim"
+
+# Pyenv Setup
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
