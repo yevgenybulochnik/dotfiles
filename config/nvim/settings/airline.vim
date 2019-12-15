@@ -8,7 +8,6 @@ if $PL_FONTS == 'true'
     let g:airline_powerline_fonts=1
 endif
 
-
 " Key bindings
 nmap <leader>1 <plug>AirlineSelectTab1
 nmap <leader>2 <plug>AirlineSelectTab2
