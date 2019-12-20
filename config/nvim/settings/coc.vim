@@ -24,3 +24,4 @@ nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
 inoremap <silent><expr> <c-space> coc#refresh()
+nnoremap <silent> <leader>af :<C-u>CocCommand eslint.executeAutofix<cr>
