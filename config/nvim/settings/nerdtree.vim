@@ -1,9 +1,11 @@
 " General Settings
 let NERDTreeShowHidden = 1 "force nerdtree to show hidden files
 let NERDTreeMinimalUI = 1 "hide Press ? for help
+let NERDTreeIgnore = ['\.pyc$', '__pycache__']
 
 " Key Bindings
 map <F2> :NERDTreeToggle<CR>
+map <leader>r :NERDTreeFind<CR>
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
