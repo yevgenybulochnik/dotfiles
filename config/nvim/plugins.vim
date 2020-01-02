@@ -7,6 +7,7 @@ Plug 'scrooloose/nerdcommenter' " better commenting
 Plug 'ntpeters/vim-better-whitespace' " Show Whitespace
 Plug 'tpope/vim-surround'
 Plug 'mattn/emmet-vim'
+Plug 'Vimjas/vim-python-pep8-indent'
 
 " === UI === "
 Plug 'morhetz/gruvbox' " Colorscheme
