@@ -12,6 +12,7 @@ Plug 'Vimjas/vim-python-pep8-indent'
 " === UI === "
 Plug 'morhetz/gruvbox' " Colorscheme
 Plug 'scrooloose/nerdtree' " File explorer
+Plug 'xuyuanp/nerdtree-git-plugin'
 Plug 'vim-airline/vim-airline' " Vim status line
 Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter' " git diff support
