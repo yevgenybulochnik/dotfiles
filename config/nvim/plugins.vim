@@ -26,5 +26,6 @@ Plug 'maxmellon/vim-jsx-pretty'
 
 " === Misc === "
 Plug 'tpope/vim-fugitive' " add git control to vim
+Plug 'junegunn/gv.vim' " git log graph
 
 call plug#end()
