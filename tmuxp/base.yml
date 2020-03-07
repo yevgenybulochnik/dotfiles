@@ -1,4 +1,4 @@
-session_name: testbase
+session_name: base
 start_directory: '~'
 windows:
 - window_name: home
