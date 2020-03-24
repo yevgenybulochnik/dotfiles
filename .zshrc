@@ -18,11 +18,11 @@ antigen use oh-my-zsh
 antigen theme fishy
 
 # Spaceship prompt settings
-# antigen theme https://github.com/denysdovhan/spaceship-zsh-theme spaceship
-# SPACESHIP_USER_COLOR=214
-# SPACESHIP_DIR_COLOR=72
-# SPACESHIP_HOST_COLOR_SSH=142
-# SPACESHIP_GIT_BRANCH_COLOR=175
+antigen theme https://github.com/denysdovhan/spaceship-zsh-theme spaceship
+SPACESHIP_USER_COLOR=214
+SPACESHIP_DIR_COLOR=72
+SPACESHIP_HOST_COLOR_SSH=142
+SPACESHIP_GIT_BRANCH_COLOR=175
 
 # Antigen Bundles
 antigen bundle git
