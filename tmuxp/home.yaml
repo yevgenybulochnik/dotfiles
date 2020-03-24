@@ -1,0 +1,29 @@
+session_name: home
+windows:
+- window_name: base
+  start_directory: '~'
+  focus: 'true'
+- window_name: dotfiles
+  start_directory: '~/dotfiles'
+  layout: 1a6b,266x59,0,0{133x59,0,0,21,132x59,134,0,22}
+  panes:
+    - focus: true
+    -
+- window_name: ansible-lab
+  start_directory: '~/workspace/ansible-lab'
+  layout: da6d,266x59,0,0{133x59,0,0,19,132x59,134,0,20}
+  panes:
+    - focus: true
+    -
+- window_name: kcli
+  start_directory: '~/.kcli'
+  layout: 9a70,266x59,0,0{133x59,0,0,17,132x59,134,0,18}
+  panes:
+    - focus: true
+    -
+- window_name: apache-settings
+  start_directory: /etc/apache2
+  layout: 9a6e,266x59,0,0{133x59,0,0,15,132x59,134,0,16}
+  panes:
+    - focus: true
+    -
