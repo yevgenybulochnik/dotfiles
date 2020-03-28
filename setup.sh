@@ -115,6 +115,10 @@ PARAMS=""
 SETUP="full"
 while (( "$#" )); do
     case "$1" in
+      -h|--help)
+        SETUP='help'
+        shift 1
+        ;;
       -m|--minimal-setup)
         SETUP='minimal'
         shift 1
@@ -142,6 +146,19 @@ done
 eval set -- "$PARAMS"
 
 # Main script
+if [ $SETUP == "help" ]
+then
+__usage="Dotfiles Setup Help:
+    Invoking the setup script will execute a full install, including zsh, nvim, tmux, antigen and linking dofiles
+
+Options:
+    -h, --help            Show help screen
+    -m, --minimal-setup   Minimal setup using vim
+    -u, --uninstall       Delete linked dotfiles, does not remove deps
+"
+echo "$__usage"
+fi
+
 if [ $SETUP == "minimal" ]
 then
     minimal_setup
