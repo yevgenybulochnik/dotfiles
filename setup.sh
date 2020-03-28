@@ -85,18 +85,8 @@ dotfiles_setup() {
 }
 
 neovim_setup() {
-    local NEOVIM_LINKS='
-        ftplugin
-        coc-settings.json
-        settings
-        init.vim
-        plugins.vim
-    '
     mkdir -p ~/.config/nvim
-    for LINK in $NEOVIM_LINKS
-    do
-        ln -snf $DIR/config/nvim/$LINK ~/.config/nvim/
-    done
+    ln -snf $DIR/config/nvim/* ~/.config/nvim/
 }
 
 plug_setup() {
@@ -108,6 +98,11 @@ plug_setup() {
 tmux_plugin_setup() {
   git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
   ~/.tmux/plugins/tpm/bin/install_plugins
+}
+
+tmuxp_setup() {
+    mkdir ~/.tmuxp
+    ln -snf $DIR/tmuxp/* ~/.tmuxp
 }
 
 antigen_setup() {
@@ -159,6 +154,7 @@ then
     neovim_setup
     plug_setup
     tmux_plugin_setup
+    tmuxp_setup
     antigen_setup
 fi
 
@@ -170,6 +166,10 @@ then
   .vimrc
   .vim
   .config/nvim
+  .zshrc
+  .tmuxp
+  .antigen
+  .tmux
   '
   for CONFIG in $CONFIGS
   do
