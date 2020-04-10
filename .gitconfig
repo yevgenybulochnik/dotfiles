@@ -4,6 +4,6 @@
 [core]
     editor = nvim
 [alias]
-    hist = log -20 --pretty=format:"%C(yellow)%h%Creset\\ %C(green)%ar%C(cyan)%d\\ %Creset%s%C(yellow)\\ [%cn]" --graph --decorate --all
+    hist = "!git --no-pager log -50 --pretty=format:'%C(yellow)%h%Creset\\ %C(green)%ar%C(cyan)%d\\ %Creset%s%C(yellow)\\ [%cn]' --graph --decorate --all"
 [url "git@github.com:yevgenybulochnik/"]
     insteadOf=yb:
