@@ -8,6 +8,7 @@ Plug 'ntpeters/vim-better-whitespace' " Show Whitespace
 Plug 'tpope/vim-surround'
 Plug 'mattn/emmet-vim'
 Plug 'Vimjas/vim-python-pep8-indent'
+Plug 'psf/black', {'branch': 'stable'}
 
 " === UI === "
 Plug 'morhetz/gruvbox' " Colorscheme
