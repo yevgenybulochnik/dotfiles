@@ -15,7 +15,7 @@ compinit
 source ~/.antigen/antigen.zsh
 
 antigen use oh-my-zsh
-antigen theme fishy
+# antigen theme fishy
 
 # Spaceship prompt settings
 antigen theme https://github.com/denysdovhan/spaceship-zsh-theme spaceship
@@ -56,3 +56,5 @@ export LIBVIRT_DEFAULT_URI='qemu:///system'
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
+
+export PL_FONTS=true
