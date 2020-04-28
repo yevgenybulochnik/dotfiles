@@ -2,7 +2,7 @@
     email = yevgeny.bulochnik@gmail.com
     name = Yevgeny Bulochnik
 [core]
-    editor = nvim
+    editor = /usr/local/bin/nvim
 [alias]
     hist = "!git --no-pager log -50 --pretty=format:'%C(yellow)%h%Creset\\ %C(green)%ar%C(cyan)%d\\ %Creset%s%C(yellow)\\ [%cn]' --graph --decorate --all"
 [url "git@github.com:yevgenybulochnik/"]
