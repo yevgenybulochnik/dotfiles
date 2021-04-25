@@ -65,7 +65,7 @@ setup_dependencies() {
 
     if ! [ -x "$(command -v nvim)" ]
     then
-        sudo wget https://github.com/neovim/neovim/releases/download/v0.4.3/nvim.appimage -O /usr/local/bin/nvim
+        sudo wget https://github.com/neovim/neovim/releases/download/v0.4.4/nvim.appimage -O /usr/local/bin/nvim
         sudo chmod +x /usr/local/bin/nvim
     else
         echo 'Skipping nvim install'
