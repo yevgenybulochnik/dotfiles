@@ -35,12 +35,14 @@ antigen bundle tmux
 antigen bundle debian
 antigen bundle chrissicool/zsh-256color
 antigen bundle endaaman/lxd-completion-zsh
+antigen bundle kubectl
 
 antigen apply
 
 # Alias
 alias vim="nvim"
 alias poe="poetry"
+alias k="kubectl"
 
 # Pyenv Setup
 export PYENV_ROOT="$HOME/.pyenv"
