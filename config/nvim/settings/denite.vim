@@ -85,7 +85,7 @@ nnoremap <leader>j :<C-u>DeniteCursorWord grep:.<CR>
 autocmd FileType denite-filter call s:denite_filter_my_settings()
 function! s:denite_filter_my_settings() abort
   imap <silent><buffer> <C-o>
-  \ <Plug>(denite_filter_quit)
+  \ <Plug>(denite_filter_update)
   inoremap <silent><buffer><expr> <C-c>
   \ denite#do_map('quit')
   nnoremap <silent><buffer><expr> <C-c>
