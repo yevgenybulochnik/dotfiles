@@ -38,7 +38,7 @@ setw -g mode-keys vi
 bind r source-file ~/.tmux.conf
 
 #Easier window split
-bind \ split-window -h -c "#{pane_current_path}"
+bind \\ split-window -h -c "#{pane_current_path}"
 bind - split-window -v -c "#{pane_current_path}"
 
 #Alt resize window panes
