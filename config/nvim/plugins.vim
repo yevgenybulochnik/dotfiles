@@ -10,6 +10,7 @@ Plug 'mattn/emmet-vim'
 Plug 'Vimjas/vim-python-pep8-indent'
 Plug 'psf/black', {'branch': 'stable'}
 Plug 'junegunn/vim-easy-align'
+Plug 'easymotion/vim-easymotion'
 
 " === UI === "
 Plug 'morhetz/gruvbox' " Colorscheme
