@@ -56,7 +56,7 @@ export PATH="$POETRY_ROOT/bin:$PATH"
 export LIBVIRT_DEFAULT_URI='qemu:///system'
 
 if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init -)"
+  eval "$(pyenv init --path)"
 fi
 
 export PL_FONTS=true
