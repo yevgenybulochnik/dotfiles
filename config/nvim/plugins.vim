@@ -11,6 +11,8 @@ Plug 'Vimjas/vim-python-pep8-indent'
 Plug 'psf/black', {'branch': 'stable'}
 Plug 'junegunn/vim-easy-align'
 Plug 'easymotion/vim-easymotion'
+Plug 'puremourning/vimspector', {'do': './install_gadget.py --enable-c --enable-python'}
+Plug 'szw/vim-maximizer'
 
 " === UI === "
 Plug 'morhetz/gruvbox' " Colorscheme
