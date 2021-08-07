@@ -25,6 +25,10 @@ Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' } " adjustable floatin
 Plug 'simnalamburt/vim-mundo' " Visual undo tree
 Plug 'nathanaelkane/vim-indent-guides' " Visual indents
 
+" === Productivity === "
+Plug 'xolox/vim-notes'
+Plug 'xolox/vim-misc'
+
 " === Syntax === "
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'maxmellon/vim-jsx-pretty'
