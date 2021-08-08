@@ -18,10 +18,14 @@ set softtabstop=4 " number of spaces in tab when editing
 set expandtab " tabs are spaces
 set shiftwidth=4
 
-"Search & highlight settings
+" Search & highlight settings
 set incsearch
 set hlsearch
 nnoremap <leader><space> :nohlsearch<CR>
+
+" Misc Keybindings
+inoremap <expr> <c-j> ("\<C-n>") " omnicomplete movement
+inoremap <expr> <c-k> ("\<C-p>")
 
 " Source all setting files
 for fpath in split(glob('~/.config/nvim/settings/*.vim', '\n'))
