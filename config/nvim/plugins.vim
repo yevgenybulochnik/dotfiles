@@ -21,9 +21,10 @@ Plug 'xuyuanp/nerdtree-git-plugin'
 Plug 'vim-airline/vim-airline' " Vim status line
 Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter' " git diff support
-Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' } " adjustable floating window
 Plug 'simnalamburt/vim-mundo' " Visual undo tree
 Plug 'nathanaelkane/vim-indent-guides' " Visual indents
+Plug 'nvim-lua/popup.nvim' " Necessary for nvim-telescope
+Plug 'nvim-telescope/telescope.nvim'
 
 " === Productivity === "
 Plug 'xolox/vim-notes'
@@ -36,5 +37,6 @@ Plug 'maxmellon/vim-jsx-pretty'
 " === Misc === "
 Plug 'tpope/vim-fugitive' " add git control to vim
 Plug 'junegunn/gv.vim' " git log graph
+Plug 'nvim-lua/plenary.nvim' " Necessary for nvim-telescope but also custom plugins
 
 call plug#end()
