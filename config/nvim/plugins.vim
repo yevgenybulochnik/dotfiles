@@ -24,7 +24,8 @@ Plug 'airblade/vim-gitgutter' " git diff support
 Plug 'simnalamburt/vim-mundo' " Visual undo tree
 Plug 'nathanaelkane/vim-indent-guides' " Visual indents
 Plug 'nvim-lua/popup.nvim' " Necessary for nvim-telescope
-Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-telescope/telescope.nvim' " Extensible fuzzyfinder using lua
+Plug 'fannheyward/telescope-coc.nvim' " Extension for telescope and coc
 
 " === Productivity === "
 Plug 'xolox/vim-notes'
