@@ -41,3 +41,10 @@ Plug 'junegunn/gv.vim' " git log graph
 Plug 'nvim-lua/plenary.nvim' " Necessary for nvim-telescope but also custom plugins
 
 call plug#end()
+
+" === COC Extensions === "
+let g:coc_global_extensions = [
+    \ 'coc-pyright',
+    \ 'coc-json',
+    \ 'coc-snippets',
+    \]
