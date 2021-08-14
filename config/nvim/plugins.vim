@@ -13,6 +13,7 @@ Plug 'junegunn/vim-easy-align'
 Plug 'easymotion/vim-easymotion'
 Plug 'puremourning/vimspector', {'do': './install_gadget.py --enable-c --enable-python'}
 Plug 'szw/vim-maximizer'
+Plug 'honza/vim-snippets'
 
 " === UI === "
 Plug 'morhetz/gruvbox' " Colorscheme
