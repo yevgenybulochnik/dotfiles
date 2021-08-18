@@ -2,6 +2,8 @@ lua << EOF
 require('telescope').load_extension('coc')
 
 local actions = require('telescope.actions')
+local map = vim.api.nvim_set_keymap
+local default_opts = {noremap = true}
 
 require('telescope').setup{
   defaults = {
@@ -13,9 +15,10 @@ require('telescope').setup{
     },
   }
 }
+map('n', '<leader>ff', "<cmd>lua require'telescope.builtin'.find_files({ find_command = {'rg', '--files', '--hidden', '-g', '!.git' }})<cr>", default_opts)
 EOF
 
-nnoremap <leader>ff <cmd>Telescope find_files<cr>
+" nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
