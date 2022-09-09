@@ -58,6 +58,10 @@ return require('packer').startup(function(use)
   use 'terrortylor/nvim-comment'
   use 'tpope/vim-fugitive'
   use 'windwp/nvim-autopairs'
+  use {
+    'phaazon/hop.nvim',
+    branch = 'v2',
+  }
 
   -- Snippets
   use 'L3MON4D3/LuaSnip'
