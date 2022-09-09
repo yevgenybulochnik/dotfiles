@@ -1,6 +1,19 @@
 require('nvim-tree').setup({
+  hijack_cursor = true,
   view = {
     adaptive_size = true,
+    mappings = {
+      list = {
+        { key = "u", action = "dir_up" },
+        { key = "s", action = "vsplit"},
+      },
+    },
+  },
+  git = {
+    enable = true,
+    ignore = false,
+    show_on_dirs = true,
+    timeout = 400,
   },
   renderer = {
     add_trailing = false,
