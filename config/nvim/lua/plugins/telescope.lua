@@ -14,13 +14,9 @@ require('telescope').setup{
     }
   },
   pickers = {
-    -- Default configuration for builtin pickers goes here:
-    -- picker_name = {
-    --   picker_config_key = value,
-    --   ...gg
-    -- }
-    -- Now the picker_config_key will be applied every time you call this
-    -- builtin picker
+    buffers = {
+      sort_lastused = true,
+    }
   },
   extensions = {
     -- Your extension configuration goes here:
@@ -32,3 +28,6 @@ require('telescope').setup{
 }
 map('n', '<leader>ff', "<cmd>lua require'telescope.builtin'.find_files({ find_command = {'rg', '--files', '--hidden', '-g', '!.git' }})<cr>", default_opts)
 map('n', '<leader>;', "<cmd>lua require'telescope.builtin'.buffers{}<cr>", default_opts)
+map('n', '<leader>d', "<cmd>lua require'telescope.builtin'.diagnostics{bufnr=0}<cr>", default_opts)
+map('n', '<leader>gc', "<cmd>lua require'telescope.builtin'.git_commits{}<cr>", default_opts)
+map('n', '<leader>gb', "<cmd>lua require'telescope.builtin'.git_branches{}<cr>", default_opts)
