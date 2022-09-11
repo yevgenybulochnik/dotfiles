@@ -30,3 +30,6 @@ map('i', '<leader>s', '<C-c>:w<CR>')
 
 -- Close all windows and exit from Neovim with <leader> and q
 map('n', '<leader>q', ':qa!<CR>')
+
+-- Keymapping for formatting
+vim.cmd[[command! Format execute 'lua vim.lsp.buf.formatting()']]
