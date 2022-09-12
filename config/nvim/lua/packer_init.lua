@@ -40,6 +40,7 @@ return require('packer').startup(function(use)
   use 'hrsh7th/cmp-nvim-lsp'
   -- use 'hrsh7th/cmp-nvim-lsp-signature-help'
   use 'ray-x/lsp_signature.nvim'
+  use 'jose-elias-alvarez/null-ls.nvim'
 
   -- LSP
   use {
