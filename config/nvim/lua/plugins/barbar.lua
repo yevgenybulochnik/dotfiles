@@ -1,6 +1,12 @@
-require'bufferline'.setup {
-  auto_hide = true
+local bufferline_status_ok, bufferline = pcall(require, 'bufferline')
+if not bufferline_status_ok then
+  return
+end
+
+bufferline.setup {
+  auto_hide = true,
 }
+
 -- KeyBindings
 local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }

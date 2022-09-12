@@ -1,8 +1,13 @@
+local telescope_status_ok, telescope = pcall(require, 'telescope')
+if not telescope_status_ok then
+  return
+end
+
 local actions = require('telescope.actions')
 local map = vim.api.nvim_set_keymap
 local default_opts = {noremap = true}
 
-require('telescope').setup{
+telescope.setup{
   defaults = {
     -- Default configuration for telescope goes here:
     -- config_key = value,

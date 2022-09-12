@@ -1,4 +1,9 @@
-require('nvim-tree').setup({
+local tree_status_ok, tree = pcall(require, 'nvim-tree')
+if not tree_status_ok then
+  return
+end
+
+tree.setup({
   hijack_cursor = true,
   view = {
     adaptive_size = true,
