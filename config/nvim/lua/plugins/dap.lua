@@ -35,3 +35,11 @@ end
 dap.listeners.before.event_exited["dapui_config"] = function()
   dapui.close()
 end
+
+local map = vim.api.nvim_set_keymap
+local opts = { noremap = true, silent = true }
+
+map('n', '<leader>b', '<cmd>lua require"dap".toggle_breakpoint()<cr>', opts)
+map('n', '<leader>c', '<cmd>lua require"dap".continue()<cr>', opts)
+map('n', '<leader>i', '<cmd>lua require"dap".step_into()<cr>', opts)
+map('n', '<leader>o', '<cmd>lua require"dap".step_over()<cr>', opts)
