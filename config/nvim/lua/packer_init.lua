@@ -65,6 +65,10 @@ return require('packer').startup(function(use)
   }
   use 'mfussenegger/nvim-dap'
   use 'rcarriga/nvim-dap-ui'
+  use {
+    "kylechui/nvim-surround",
+    tag = "*"
+  }
 
   -- Snippets
   use 'L3MON4D3/LuaSnip'
