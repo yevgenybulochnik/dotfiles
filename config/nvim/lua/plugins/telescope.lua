@@ -36,3 +36,4 @@ map('n', '<leader>;', "<cmd>lua require'telescope.builtin'.buffers{}<cr>", defau
 map('n', '<leader>d', "<cmd>lua require'telescope.builtin'.diagnostics{bufnr=0}<cr>", default_opts)
 map('n', '<leader>gc', "<cmd>lua require'telescope.builtin'.git_commits{}<cr>", default_opts)
 map('n', '<leader>gb', "<cmd>lua require'telescope.builtin'.git_branches{}<cr>", default_opts)
+map('n', '<leader>k', "<cmd>lua require'telescope.builtin'.keymaps{}<cr>", default_opts)
