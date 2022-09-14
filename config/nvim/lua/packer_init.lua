@@ -63,6 +63,8 @@ return require('packer').startup(function(use)
     'phaazon/hop.nvim',
     branch = 'v2',
   }
+  use 'mfussenegger/nvim-dap'
+  use 'rcarriga/nvim-dap-ui'
 
   -- Snippets
   use 'L3MON4D3/LuaSnip'
