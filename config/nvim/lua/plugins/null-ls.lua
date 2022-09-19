@@ -8,7 +8,7 @@ local diagnostics = null_ls.builtins.diagnostics
 
 require'null-ls'.setup {
   sources = {
-    formatting.black,
+    formatting.black.with{ extra_args={'-l 79'}},
     diagnostics.flake8,
     formatting.stylua,
     formatting.prettier,
