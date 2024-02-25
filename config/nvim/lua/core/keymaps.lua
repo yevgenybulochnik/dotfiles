@@ -7,7 +7,7 @@ local function map(mode, lhs, rhs, opts)
 end
 
 -- Change leader to a comma
-vim.g.mapleader = ','
+vim.g.mapleader = ' '
 
 -- Map Esc to kk
 map('i', 'kk', '<Esc>')
@@ -32,4 +32,4 @@ map('i', '<leader>s', '<C-c>:w<CR>')
 map('n', '<leader>q', ':qa!<CR>')
 
 -- Keymapping for formatting
-vim.cmd[[command! Format execute 'lua vim.lsp.buf.formatting()']]
+vim.cmd[[command! Format execute 'lua vim.lsp.buf.format()']]
