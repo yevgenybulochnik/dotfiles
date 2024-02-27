@@ -80,6 +80,7 @@ return require("lazy").setup({
 		"kylechui/nvim-surround",
 		version = "*",
 	},
+  'mattn/emmet-vim',
 
 	-- Snippets
 	"L3MON4D3/LuaSnip",
