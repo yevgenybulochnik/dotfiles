@@ -4,7 +4,7 @@ if not treesitter_status_ok then
 end
 
 treesitter.setup {
-  ensure_installed = {'lua', 'typescript', 'go', 'python'},
+  ensure_installed = {'lua', 'typescript', 'go', 'python', 'tsx'},
   highlight = {
     enable = true,
     disable = {""},
