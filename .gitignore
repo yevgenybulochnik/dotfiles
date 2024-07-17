@@ -1,3 +1,4 @@
 .vagrant/
 *cloudimg-console.log
 plugin
+lazy-lock.json
