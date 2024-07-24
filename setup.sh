@@ -89,25 +89,9 @@ neovim_setup() {
     ln -snf $DIR/config/nvim/* ~/.config/nvim/
 }
 
-plug_setup() {
-  curl -sfLo ~/.config/nvim/autoload/plug.vim --create-dirs \
-      https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  nvim +PlugInstall +qall
-}
-
-tmux_plugin_setup() {
-  git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-  ~/.tmux/plugins/tpm/bin/install_plugins
-}
-
 tmuxp_setup() {
     mkdir ~/.tmuxp
     ln -snf $DIR/tmuxp/* ~/.tmuxp
-}
-
-antigen_setup() {
-  mkdir ~/.antigen
-  curl -L git.io/antigen > ~/.antigen/antigen.zsh
 }
 
 # Argument parsing
@@ -169,10 +153,7 @@ then
     setup_dependencies
     dotfiles_setup
     neovim_setup
-    plug_setup
-    tmux_plugin_setup
     tmuxp_setup
-    antigen_setup
 fi
 
 if [ $SETUP == "uninstall" ]
@@ -185,7 +166,6 @@ then
   .config/nvim
   .zshrc
   .tmuxp
-  .antigen
   .tmux
   '
   for CONFIG in $CONFIGS
