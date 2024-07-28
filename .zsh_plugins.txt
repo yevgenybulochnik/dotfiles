@@ -1,2 +1,10 @@
+# Theme
+spaceship-prompt/spaceship-prompt.git
+
+getantidote/use-omz        # handle OMZ dependencies
+ohmyzsh/ohmyzsh path:lib   # load OMZ's library
+ohmyzsh/ohmyzsh path:plugins/colored-man-pages  # load OMZ plugins
+ohmyzsh/ohmyzsh path:plugins/magic-enter
+
 zsh-users/zsh-syntax-highlighting
 zsh-users/zsh-autosuggestions
