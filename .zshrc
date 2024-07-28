@@ -17,6 +17,8 @@ source "$HOME/.antidote/antidote.zsh"
 # initialize plugins statically with ${ZDOTDIR:-~}/.zsh_plugins.txt
 antidote load
 
+bindkey '^f' autosuggest-accept
+
 # Alias
 alias vim="nvim"
 alias poe="poetry"
