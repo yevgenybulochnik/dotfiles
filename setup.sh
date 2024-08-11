@@ -77,6 +77,7 @@ dotfiles_setup() {
         .gitconfig
         .zshrc
         .tmux.conf
+        .zsh_plugins.txt
     '
     for FILE in $DOT_FILES
     do
