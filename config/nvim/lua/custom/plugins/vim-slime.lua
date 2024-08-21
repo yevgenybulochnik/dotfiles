@@ -10,5 +10,6 @@ return {
             socket_name = "default",
             target_pane = "{last}"
         }
+        vim.g.slime_cell_delimiter = '# %%'
     end,
 }
