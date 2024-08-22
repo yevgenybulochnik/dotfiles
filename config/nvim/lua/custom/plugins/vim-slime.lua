@@ -12,4 +12,9 @@ return {
         }
         vim.g.slime_cell_delimiter = '# %%'
     end,
+    config = function()
+        vim.keymap.set({'n', 'i'}, '<leader>sc', function()
+            vim.cmd [[ call slime#send_cell()]]
+        end, {desc = 'send code cell to terminal'})
+    end
 }
