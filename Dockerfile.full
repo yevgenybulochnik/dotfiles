@@ -1,0 +1,34 @@
+FROM ubuntu:latest
+
+ARG VERSION
+
+RUN apt update && apt install -y wget git curl sudo ripgrep build-essential
+
+RUN echo 'ubuntu ALL=(ALL) NOPASSWD:ALL' >> \
+/etc/sudoers
+
+USER ubuntu
+
+RUN mkdir -p /home/ubuntu/.local/bin && \
+    mkdir -p /home/ubuntu/.local/opt && \
+    mkdir -p /home/ubuntu/.config && \
+    mkdir -p /home/ubuntu/.config/nvim && \
+    mkdir -p /home/ubuntu/workspace
+
+WORKDIR /home/ubuntu/.local/opt
+
+RUN wget "https://github.com/neovim/neovim/releases/download/${VERSION}/nvim-linux-x86_64.appimage" -O ./nvim-appimage && \
+    chmod +x ./nvim-appimage && \
+    ./nvim-appimage --appimage-extract && \
+    ln -snf /home/ubuntu/.local/opt/squashfs-root/usr/bin/nvim /home/ubuntu/.local/bin/nvim
+
+ENV PATH="/home/ubuntu/.local/bin:${PATH}"
+ENV TERM=screen-256color
+
+WORKDIR /home/ubuntu
+
+RUN curl -LsSf https://astral.sh/uv/install.sh | sh
+
+RUN uv tool install ruff && \
+    uv tool install pyright && \
+    uv tool install sqlfluff

@@ -1,0 +1,11 @@
+services:
+  full:
+    build:
+      context: .
+      dockerfile: Dockerfile.full
+      args:
+        VERSION: "v0.11.0"
+    container_name: ubuntu-base
+    command: tail -f /dev/null
+    volumes:
+      - ./nvim:/home/ubuntu/.config/nvim
