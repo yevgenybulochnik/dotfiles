@@ -6,3 +6,5 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 
 -- Use Escape key to exit insert mode
 vim.keymap.set({'n', 'i', 'v'}, '<C-[>', '<Esc>')
+
+vim.keymap.set('n', '\\', '<Cmd>Neotree toggle<CR>')
