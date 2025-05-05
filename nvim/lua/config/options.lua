@@ -10,6 +10,7 @@ vim.opt.cursorline = true
 vim.opt.signcolumn = 'yes'
 
 vim.opt.splitright = true
+vim.opt.splitbelow = true
 
 vim.opt.clipboard = 'unnamedplus'
 
