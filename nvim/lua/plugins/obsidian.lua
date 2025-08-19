@@ -20,6 +20,7 @@ return {
   ---@module 'obsidian'
   ---@type obsidian.config.ClientOpts
   opts = {
+    legacy_commands = false,
     workspaces = {
       {
         name = "personal",
