@@ -1,0 +1,7 @@
+session_name: dotfiles
+start_directory: /Users/yevgeny/dotfiles
+windows:
+  - layout: main-vertical
+    panes:
+    - nvim
+    - lazygit
