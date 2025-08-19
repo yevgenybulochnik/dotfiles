@@ -20,12 +20,22 @@ return {
   ---@module 'obsidian'
   ---@type obsidian.config.ClientOpts
   opts = {
+
+    completion = {
+      blink = true,
+    },
+
     legacy_commands = false,
+
     workspaces = {
       {
         name = "personal",
         path = "~/vaults/obsidian",
       },
+    },
+
+    daily_notes = {
+      folder = "daily",
     },
 
     -- see below for full list of options 👇
