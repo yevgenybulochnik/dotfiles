@@ -34,4 +34,19 @@ for _, v in ipairs(markdown_cell_types) do
   )
 end
 
+table.insert(
+  snippets_table,
+  s(
+    { trig = "mcmo", snippetType = "autosnippet" },
+    fmta(
+      [[
+        ```python {.marimo}
+        <>
+        ```
+      ]],
+      { i(0) }
+    )
+  )
+)
+
 return snippets_table
