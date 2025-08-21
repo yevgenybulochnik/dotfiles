@@ -217,11 +217,10 @@ return {
           -- capabilities = {},
           settings = {
             Lua = {
-              completion = {
-                callSnippet = "Replace",
-              },
               -- You can toggle below to ignore Lua_LS's noisy `missing-fields` warnings
-              -- diagnostics = { disable = { 'missing-fields' } },
+              diagnostics = {
+                globals = { "vim" },
+              },
             },
           },
         },
@@ -349,7 +348,13 @@ return {
           --   end,
           -- },
         },
-        opts = {},
+        config = function()
+          local ls = require("luasnip")
+          ls.setup({
+            enable_autosnippets = true,
+          })
+          require("luasnip.loaders.from_lua").load({ paths = { "~/.config/nvim/snippets" } })
+        end,
       },
       "folke/lazydev.nvim",
     },
