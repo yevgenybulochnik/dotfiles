@@ -354,7 +354,7 @@ return {
             enable_autosnippets = true,
             exit_roots = false,
           })
-          require("luasnip.loaders.from_lua").load({ paths = { "~/.config/nvim/snippets" } })
+          require("luasnip.loaders.from_lua").load({ paths = { "~/.config/nvim/snippets", "~/.snippets" } })
         end,
       },
       "folke/lazydev.nvim",
