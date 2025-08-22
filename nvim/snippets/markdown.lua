@@ -10,9 +10,10 @@ local fmta = require("luasnip.extras.fmt").fmta
 local rep = require("luasnip.extras").rep
 
 local markdown_cell_types = {
-  { trig = "mcpy", celltype = "python" },
-  { trig = "mcsql", celltype = "sql" },
-  { trig = "mcbash", celltype = "bash" },
+  { trig = "mcp", celltype = "python" },
+  { trig = "mcs", celltype = "sql" },
+  { trig = "mcb", celltype = "bash" },
+  { trig = "mcl", celltype = "lua" },
 }
 
 local snippets_table = {}
