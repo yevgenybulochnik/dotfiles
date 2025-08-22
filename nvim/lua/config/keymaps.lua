@@ -15,3 +15,20 @@ end, { desc = "Toggle virtual text" })
 vim.keymap.set("n", "<leader>obt", ":Obsidian today<CR>", { desc = "Open today's note" })
 vim.keymap.set("n", "<leader>obn", ":Obsidian new<CR>", { desc = "Create a new note" })
 vim.keymap.set("n", "<leader>obs", ":Obsidian quick_switch<CR>", { desc = "Quick search obsidian notes" })
+
+-- Luasnip keymaps
+local ls = require("luasnip")
+
+vim.keymap.set({ "i", "s" }, "<C-L>", function()
+  ls.expand_or_jump(1)
+end, { silent = true })
+
+vim.keymap.set({ "i", "s" }, "<C-J>", function()
+  ls.jump(-1)
+end, { silent = true })
+
+vim.keymap.set({ "i", "s" }, "<C-E>", function()
+  if ls.choice_active() then
+    ls.change_choice(1)
+  end
+end, { silent = true })
