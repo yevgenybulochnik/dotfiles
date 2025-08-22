@@ -352,6 +352,7 @@ return {
           local ls = require("luasnip")
           ls.setup({
             enable_autosnippets = true,
+            exit_roots = false,
           })
           require("luasnip.loaders.from_lua").load({ paths = { "~/.config/nvim/snippets" } })
         end,
