@@ -29,7 +29,7 @@ vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 
 vim.opt.clipboard = "unnamedplus"
 
-vim.opt.conceallevel = 1
+vim.opt.conceallevel = 0
 
 vim.api.nvim_create_autocmd("TextYankPost", {
   desc = "Highlight when yanking (copying) text",
