@@ -32,3 +32,7 @@ vim.keymap.set({ "i", "s" }, "<C-E>", function()
     ls.change_choice(1)
   end
 end, { silent = true })
+
+-- Codecompanion keymaps
+vim.keymap.set({ "n" }, "<leader>cc", ":CodeCompanionChat<CR>", { desc = "Open Code Companion" })
+vim.keymap.set({ "v" }, "<leader>cc", ":'<,'>CodeCompanionChat<CR>", { desc = "Open Code Companion" })
