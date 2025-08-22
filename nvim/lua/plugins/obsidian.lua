@@ -21,6 +21,10 @@ return {
   ---@type obsidian.config.ClientOpts
   opts = {
 
+    ui = {
+      enable = false,
+    },
+
     completion = {
       blink = true,
     },
