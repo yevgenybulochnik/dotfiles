@@ -5,8 +5,9 @@ local t = ls.text_node
 local i = ls.insert_node
 
 -- Example autosnippet: expands "fn" into a Lua function template
-return {
-  s({ trig = "fn", snippetType = "autosnippet" }, {
+
+local all_snippits = {
+  s({ trig = "fn" }, {
     t("function "),
     i(1, "name"),
     t("()"),
@@ -15,3 +16,5 @@ return {
     t({ "", "end" }),
   }),
 }
+
+return all_snippits
