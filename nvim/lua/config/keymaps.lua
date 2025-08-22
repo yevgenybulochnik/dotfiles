@@ -10,3 +10,8 @@ vim.keymap.set({ "n", "i", "v" }, "<C-[>", "<Esc>")
 vim.keymap.set("n", "<leader>dv", function()
   vim.diagnostic.config({ virtual_text = not vim.diagnostic.config().virtual_text })
 end, { desc = "Toggle virtual text" })
+
+-- Obsidian keymaps
+vim.keymap.set("n", "<leader>obt", ":Obsidian today<CR>", { desc = "Open today's note" })
+vim.keymap.set("n", "<leader>obn", ":Obsidian new<CR>", { desc = "Create a new note" })
+vim.keymap.set("n", "<leader>obs", ":Obsidian quick_switch<CR>", { desc = "Quick search obsidian notes" })
