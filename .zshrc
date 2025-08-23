@@ -42,3 +42,4 @@ fi
 export PL_FONTS=true
 
 export ZSH_THEME='af-magic'
+export PATH="$HOME/.local/bin:$PATH"
