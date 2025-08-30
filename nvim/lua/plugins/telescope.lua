@@ -92,6 +92,8 @@ return { -- Fuzzy Finder (files, lsp, etc)
       builtin.find_files({ hidden = true })
     end, { desc = "[S]earch [F]iles" })
 
+    vim.keymap.set("n", "<leader>gs", builtin.spell_suggest, { desc = "Spell Suggest" })
+
     -- Slightly advanced example of overriding default behavior and theme
     vim.keymap.set("n", "<leader>/", function()
       -- You can pass additional configuration to Telescope to change the theme, layout, etc.
