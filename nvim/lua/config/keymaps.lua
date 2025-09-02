@@ -36,3 +36,6 @@ end, { silent = true })
 -- Codecompanion keymaps
 vim.keymap.set({ "n" }, "<leader>cc", ":CodeCompanionChat<CR>", { desc = "Open Code Companion" })
 vim.keymap.set({ "v" }, "<leader>cc", ":'<,'>CodeCompanionChat<CR>", { desc = "Open Code Companion" })
+
+-- Aerial
+vim.keymap.set("n", "<leader>oa", ":AerialToggle!<CR>", { desc = "Toggle Aerial" })
