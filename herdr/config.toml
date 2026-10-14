@@ -1,0 +1,25 @@
+onboarding = false
+
+[ui]
+pane_gaps = false
+pane_outer_borders = false
+pane_borders = "auto"
+tab_bar_position = "bottom"
+status_indicators = "symbols"
+tab_bar_right = [
+  { type = "zoom" },
+  { type = "command", command = "uptime | sed -E 's/.*load averages?: /load /; s/,//g'", interval_seconds = 5, timeout_seconds = 2 },
+  { type = "hostname" },
+  { type = "datetime", format = "%a %d %b %H:%M" },
+]
+tab_bar_right_separator = " · "
+
+[keys]
+navigate_workspace_up = ["k", "up"]
+navigate_workspace_down = ["j", "down"]
+navigate_pane_up = "ctrl+k"
+navigate_pane_down = "ctrl+j"
+
+[theme]
+name = "catppuccin"
+auto_switch = false
