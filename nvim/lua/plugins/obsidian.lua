@@ -1,6 +1,21 @@
+-- Only keep the vaults that exist on this machine, obsidian.nvim errors on startup without one
+local workspaces = vim.tbl_filter(function(workspace)
+  return vim.fn.isdirectory(vim.fn.expand(workspace.path)) == 1
+end, {
+  {
+    name = "personal",
+    path = "~/vaults/personal",
+  },
+  {
+    name = "work",
+    path = "~/vaults/work",
+  },
+})
+
 return {
   "obsidian-nvim/obsidian.nvim",
   version = "*", -- recommended, use latest release instead of latest commit
+  cond = #workspaces > 0,
   lazy = false,
   ft = "markdown",
   -- Replace the above line with this if you only want to load obsidian.nvim for markdown files in your vault:
@@ -27,16 +42,7 @@ return {
 
     legacy_commands = false,
 
-    workspaces = {
-      {
-        name = "personal",
-        path = "~/vaults/personal",
-      },
-      {
-        name = "work",
-        path = "~/vaults/work",
-      },
-    },
+    workspaces = workspaces,
 
     daily_notes = {
       folder = "daily",
