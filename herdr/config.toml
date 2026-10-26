@@ -19,7 +19,11 @@ navigate_workspace_up = ["k", "up"]
 navigate_workspace_down = ["j", "down"]
 navigate_pane_up = "ctrl+k"
 navigate_pane_down = "ctrl+j"
+split_vertical = "prefix+\\"
 
 [theme]
 name = "catppuccin"
 auto_switch = false
+
+[terminal]
+default_shell = "/bin/zsh"
