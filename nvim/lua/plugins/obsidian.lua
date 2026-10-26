@@ -25,10 +25,6 @@ return {
       enable = false,
     },
 
-    completion = {
-      blink = true,
-    },
-
     legacy_commands = false,
 
     workspaces = {
