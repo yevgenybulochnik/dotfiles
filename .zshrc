@@ -43,3 +43,13 @@ export PL_FONTS=true
 
 export ZSH_THEME='af-magic'
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.bun/bin:$PATH"
+
+# Nvm Setup
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+
+# Direnv Setup
+if command -v direnv 1>/dev/null 2>&1; then
+  eval "$(direnv hook zsh)"
+fi
